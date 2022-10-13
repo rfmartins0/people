@@ -16,8 +16,6 @@ public class PersonRepositoryTest {
     @Autowired
     private TestEntityManager entityManager;
 
-    @Autowired
-    private PersonRepository personRepository;
 
     @Test
     public void testaDataPersistencia() {

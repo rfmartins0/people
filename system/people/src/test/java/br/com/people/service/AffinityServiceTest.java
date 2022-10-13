@@ -1,11 +1,13 @@
 package br.com.people.service;
 
-import br.com.people.domain.AffinityEntity;
-import br.com.people.domain.ScoreEntity;
-import br.com.people.dto.AffinityDto;
-import br.com.people.dto.ScoreDto;
-import br.com.people.repository.AffinityRepository;
-import br.com.people.repository.ScoreRepository;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.when;
+
+import java.util.Optional;
+
 import org.assertj.core.util.Sets;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,13 +16,9 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import java.util.Optional;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.when;
+import br.com.people.domain.AffinityEntity;
+import br.com.people.dto.AffinityDto;
+import br.com.people.repository.AffinityRepository;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AffinityServiceTest {
