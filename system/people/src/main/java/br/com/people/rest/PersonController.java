@@ -19,7 +19,7 @@ public class PersonController {
     @Autowired
     private PersonService personService;
 
-    @Operation(summary = "Add New Client/Booking")
+    @Operation(summary = "Cadastra Pessoa")
     @PostMapping(path = "/pessoa", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> createPerson(@Valid  @RequestBody final PersonDto personDto) {
        Long id = personService.save(personDto);
@@ -27,7 +27,7 @@ public class PersonController {
        return ResponseEntity.created(uri).build();
     }
 
-    @Operation(summary = "Get Person")
+    @Operation(summary = "Obtém Pessoa")
     @GetMapping(path = "/pessoa/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<PersonResponse> getPerson(@PathVariable final Long id) {
         var personResponseOptional = personService.getPerson(id);

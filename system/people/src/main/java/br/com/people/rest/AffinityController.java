@@ -19,7 +19,7 @@ public class AffinityController {
     @Autowired
     private AffinityService affinityService;
 
-    @Operation(summary = "Add New Affinity")
+    @Operation(summary = "Adiciona nova afinidade")
     @PostMapping(path = "/afinidade", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> createPerson(@RequestBody final AffinityDto affinityDto) {
         String id = affinityService.save(affinityDto);

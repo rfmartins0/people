@@ -20,7 +20,7 @@ public class ScoreController {
     @Autowired
     private ScoreService scoreService;
 
-    @Operation(summary = "Add New Score")
+    @Operation(summary = "Adiciona Score")
     @PostMapping(path = "/score", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<PersonDto> createScore(@RequestBody final ScoreDto scoreDto) {
         Integer id = scoreService.save(scoreDto);
