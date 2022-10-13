@@ -20,12 +20,13 @@ A aplicação pode ser compilada usando o seguinte comando:
 "mvn clean install"
 
 
-### Heroku
+### Swagger
 
 Após a execução é possível acessar o Swagger dos componetes:
 
 
 http://localhost:8084/swagger-ui/index.html (projeto Auth)
+
 http://localhost:8085/swagger-ui/index.html (projeto Person)
 
 
