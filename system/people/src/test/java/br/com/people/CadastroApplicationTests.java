@@ -1,4 +1,4 @@
-package test.java.br.com.people;
+package br.com.people;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
